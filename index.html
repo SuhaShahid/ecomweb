@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <title>Home Page</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><img id="logo" src="images/logo.png" alt="Logo" /></a>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="../product/products.html">Shop</a></li>
+        <li id="category-hover">
+          <a href="#">Category</a>
+          <ul id="category-dropdown"></ul> <!-- For desktop -->
+        </li>
+        <li><a href="add-to-cart/addToCart.html">Cart</a></li>
+      </ul>
+      <div id="menu-icon">&#9776;</div>
+    </nav>
+  </header>
+
+  <div id="sidebar">
+    <span class="close-btn">&#10005;</span>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="../product/products.html">Shop</a></li>
+      <li id="category-hover-sidebar">
+        <a href="#">Category</a>
+        <ul id="category-dropdown-sidebar"></ul> <!-- For mobile -->
+      </li>
+      <li><a href="add-to-cart/addToCart.html">Cart</a></li>
+    </ul>
+  </div>
+  
+
+  <main>
+    <section id="intro-sec">
+      <div class="intro">
+        <div class="imgContainer">
+          <img id="about-img" src="images/img-1.png" alt="Introduction Image"/>
+        </div>
+        <div class="textContainer">
+          <h1>Vegetables</h1>
+          <h1 id="shop">Shop</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <div class="buttons">
+            <a href="product/products.html"><button id="btn1" type="button">Buy Now</button></a>
+            <button type="button">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about-sec">
+      <div class="about">
+        <img src="images/img-2.png" />
+        <h1>About Our Shop</h1>
+        <img id="about-img" src="images/img-3.png" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iusto,
+          vel quia laboriosam non officia!
+        </p>
+        <div class="buttons">
+          <button type="button">Read More</button>
+        </div>
+      </div>
+    </section>
+    </section>
+    <section id="whyUs-sec">
+      <div class="chooseUs">
+        <img src="images/img-2.png" alt="Why Choose Us" />
+        <h1>Why Choose Us</h1>
+        <img id="about-img" src="images/img-14.png" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iusto,
+          vel quia laboriosam non officia!
+        </p>
+        <div class="buttons">
+          <button type="button">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="reviewMain">
+        <img src="images/img-2.png" />
+        <h1>Reviews</h1>
+        <div class="reviewContainer">
+          <img src="images/left-icon.png" class="arrow" />
+          <div class="review">
+            <img src="images/client-img.png" />
+            <h3>John Doe</h3>
+            <h5>Excellent Service</h5>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+              soluta dolor facilis ex quo odio cumque repellendus sunt
+              recusandae eius.
+            </p>
+          </div>
+          <img src="images/right-icon.png" class="arrow" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contactUs">
+      <div class="contactUs">
+        <img src="images/img-2.png" />
+        <h1>Contact Us</h1>
+      </div>
+      <div class="contactContainer">
+        <form>
+          <label for="name">Your Name</label>
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <label for="lname">Your Last Name</label>
+          <input type="text" name="lname" id="lname" placeholder="Last Name" />
+          <label for="phone">Your Phone</label>
+          <input type="number" name="phone" id="phone" placeholder="Phone" />
+          <label for="msg">Message</label>
+          <input type="text" name="msg" placeholder="Message" />
+          <button type="button">Submit</button>
+        </form>
+        <div class="map"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="columns">
+      <h1>Address</h1>
+      <p><img src="images/map-icon.png" alt="Map Icon"/>No.123 Chailngt Fated</p>
+      <p><img src="images/call-icon.png" alt="Call Icon"/>+92 33028309</p>
+      <p><img src="images/mail-icon.png" alt="Mail Icon"/>Location</p>
+    </div>
+    <div class="columns">
+      <h1>Social Link</h1>
+      <p><img src="images/fb-icon.png" alt="Facebook Icon"/>Facebook</p>
+      <p><img src="images/twitter-icon.png" alt="Twitter Icon"/>Twitter</p>
+      <p><img src="images/linkedin-icon.png" alt="LinkedIn Icon"/>LinkedIn</p>
+      <p><img src="images/instagram-icon.png" alt="Instagram Icon"/>Instagram</p>
+    </div>
+    <div class="columns" id="newsletter">
+      <h1>Newsletter</h1>
+      <input type="email" placeholder="Your Email"/>
+      <button type="submit">Subscribe</button>
+    </div>
+  </footer>
+  <div class="copyRight">
+    <p>&copy; 2024 All Rights Reserved</p>
+  </div>
+
+  <script src="home.js"></script>
+</body>
+</html>

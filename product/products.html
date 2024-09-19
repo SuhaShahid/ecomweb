@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="products.css" />
+    <script src="https://kit.fontawesome.com/8cf3cf221c.js" crossorigin="anonymous"></script>
+    <title>Products</title>
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html"><img id="logo" src="../images/logo.png" /></a>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li id="category-hover">
+          <a href="#">Category</a>
+          <ul id="category-dropdown"></ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="searchContainer">
+      <input type="search" id="searchInput" placeholder="Search products..." />
+    </div>
+    <div id="cartIcon">
+      <a href="#"><img id="icons" src="../images/cart.png" /></a>
+      <p id="cartvalue">0</p>
+    </div>
+
+    <div class="sideBar">
+      <h2>Cart</h2>
+      <div class="cartContainer"></div>
+      <h3 id="total">Total: $0</h3>
+      <input type="button" value="Checkout" id="checkoutButton" />
+    </div>
+
+    <h1>Shop</h1>
+    <div class="grid boxes"></div>
+    <div id="pagination"></div>
+
+    <script src="products.js"></script>
+  </body>
+</html>
